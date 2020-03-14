@@ -1,0 +1,21 @@
+﻿1. download and install erlang
+http://www.erlang.org/downloads
+
+make sure 'ERLANG_HOME' set in environment virables
+
+2. download and install rabbit mq
+https://www.rabbitmq.com/install-windows.html
+
+3. enable plugin management portal :
+cd C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.3.4\sbin
+rabbitmq-plugins.bat enable rabbitmq_management
+rabbitmq-service.bat stop  
+rabbitmq-service.bat install  
+rabbitmq-service.bat start  
+
+4. open  http://localhost:15672/mgmt.
+guest/guest
+
+4.1 create user,queue 
+4.2 set user permission
+
